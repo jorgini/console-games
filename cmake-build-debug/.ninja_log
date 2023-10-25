@@ -1,0 +1,14 @@
+# ninja log v5
+0	11	0	clean	51ec05efbde4e425
+10	874	7097626175250142	CMakeFiles/sea_fight.dir/SEA_FIGHT/field.cpp.obj	89a4b8181b93712d
+1	516	7097626171665966	CMakeFiles/sea_fight.dir/SEA_FIGHT/ship.cpp.obj	6720b3e0ec5fa8f1
+1046	1249	7019178339908392	games.exe	30e0d40a5e41776f
+5	853	7019205988050416	CMakeFiles/snake.dir/snake_game/board.cpp.obj	38176b33011e98a2
+0	857	7019205988091455	CMakeFiles/snake.dir/snake_game/snake.cpp.obj	d5bd84fa880bc153
+864	1254	7019205991979287	snake.exe	fc8f841430b59548
+6	575	7097626172255407	CMakeFiles/sea_fight.dir/SEA_FIGHT/sea_fight.cpp.obj	17cdc1af863d5ae3
+875	1044	7097626176922761	sea_fight.exe	58c54bf9daca9496
+37	788	7197943847914084	CMakeFiles/sea_fight.dir/SEA_FIGHT/ship.cpp.obj	8e604b9e0fc26355
+43	908	7197943849103459	CMakeFiles/sea_fight.dir/SEA_FIGHT/sea_fight.cpp.obj	79614c906afa23e6
+49	1279	7197943852821313	CMakeFiles/sea_fight.dir/SEA_FIGHT/field.cpp.obj	27d214ff28dc99db
+1280	1541	7197943855363608	sea_fight.exe	959da016b69d9723

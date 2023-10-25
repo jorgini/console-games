@@ -1,0 +1,4 @@
+C:/Users/jorka/CLionProjects/games/cmake-build-debug/CMakeFiles/snake.dir
+C:/Users/jorka/CLionProjects/games/cmake-build-debug/CMakeFiles/sea_fight.dir
+C:/Users/jorka/CLionProjects/games/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jorka/CLionProjects/games/cmake-build-debug/CMakeFiles/rebuild_cache.dir
