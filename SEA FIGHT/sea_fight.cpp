@@ -43,7 +43,7 @@ bool choose_difficulty() {
 
 void fill_user_board(field& user) {
     system("cls");
-    std::cout<< "Put ships on the board!\n\n";
+    std::cout << "Put ships on the board!\n\n";
     user.public_print();
 
     while (!user.check_ready()) {

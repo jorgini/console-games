@@ -53,4 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/snake.dir/DependInfo.cmake"
   "CMakeFiles/sea_fight.dir/DependInfo.cmake"
+  "CMakeFiles/2048.dir/DependInfo.cmake"
   )

@@ -141,6 +141,67 @@ sea_fight/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sea_fight.dir\build.make CMakeFiles/sea_fight.dir/build
 .PHONY : sea_fight/fast
 
+#=============================================================================
+# Target rules for targets named 2048
+
+# Build rule for target.
+2048: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 2048
+.PHONY : 2048
+
+# fast build rule for target.
+2048/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2048.dir\build.make CMakeFiles/2048.dir/build
+.PHONY : 2048/fast
+
+2048_game/field2048.obj: 2048_game/field2048.cpp.obj
+.PHONY : 2048_game/field2048.obj
+
+# target to build an object file
+2048_game/field2048.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2048.dir\build.make CMakeFiles/2048.dir/2048_game/field2048.cpp.obj
+.PHONY : 2048_game/field2048.cpp.obj
+
+2048_game/field2048.i: 2048_game/field2048.cpp.i
+.PHONY : 2048_game/field2048.i
+
+# target to preprocess a source file
+2048_game/field2048.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2048.dir\build.make CMakeFiles/2048.dir/2048_game/field2048.cpp.i
+.PHONY : 2048_game/field2048.cpp.i
+
+2048_game/field2048.s: 2048_game/field2048.cpp.s
+.PHONY : 2048_game/field2048.s
+
+# target to generate assembly for a file
+2048_game/field2048.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2048.dir\build.make CMakeFiles/2048.dir/2048_game/field2048.cpp.s
+.PHONY : 2048_game/field2048.cpp.s
+
+2048_game/main2048.obj: 2048_game/main2048.cpp.obj
+.PHONY : 2048_game/main2048.obj
+
+# target to build an object file
+2048_game/main2048.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2048.dir\build.make CMakeFiles/2048.dir/2048_game/main2048.cpp.obj
+.PHONY : 2048_game/main2048.cpp.obj
+
+2048_game/main2048.i: 2048_game/main2048.cpp.i
+.PHONY : 2048_game/main2048.i
+
+# target to preprocess a source file
+2048_game/main2048.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2048.dir\build.make CMakeFiles/2048.dir/2048_game/main2048.cpp.i
+.PHONY : 2048_game/main2048.cpp.i
+
+2048_game/main2048.s: 2048_game/main2048.cpp.s
+.PHONY : 2048_game/main2048.s
+
+# target to generate assembly for a file
+2048_game/main2048.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2048.dir\build.make CMakeFiles/2048.dir/2048_game/main2048.cpp.s
+.PHONY : 2048_game/main2048.cpp.s
+
 SEA_FIGHT/field.obj: SEA_FIGHT/field.cpp.obj
 .PHONY : SEA_FIGHT/field.obj
 
@@ -269,8 +330,15 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... 2048
 	@echo ... sea_fight
 	@echo ... snake
+	@echo ... 2048_game/field2048.obj
+	@echo ... 2048_game/field2048.i
+	@echo ... 2048_game/field2048.s
+	@echo ... 2048_game/main2048.obj
+	@echo ... 2048_game/main2048.i
+	@echo ... 2048_game/main2048.s
 	@echo ... SEA_FIGHT/field.obj
 	@echo ... SEA_FIGHT/field.i
 	@echo ... SEA_FIGHT/field.s

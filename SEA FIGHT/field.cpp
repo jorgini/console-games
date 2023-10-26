@@ -1,4 +1,6 @@
 #include "field.h"
+#include "../2048 game/field2048.h"
+
 #include <ctime>
 #include <random>
 
@@ -15,7 +17,7 @@ field::field() : ships({ship(4),
                         ship(2), ship(2), ship(2),
                         ship(1), ship(1), ship(1), ship(1),}),
                         map(std::vector<std::vector<bool>>(SIZE, std::vector<bool>(SIZE, false))),
-                        cur(0) {};
+                        cur(0) {}
 
 bool field::put_ship() {
     if (check_pos_valid(ships[cur])) {
