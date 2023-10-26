@@ -3,6 +3,10 @@
 #include <vector>
 #include "ship.h"
 #include <iostream>
+#define HIT 1
+#define MISS 0
+#define WRONG_SHOT (-1)
+#define DESTRUCTION 2
 
 std::pair<int, int> operator+(std::pair<int, int> first, std::pair<int, int> second);
 
@@ -20,7 +24,7 @@ public:
     field& operator=(const field& other) = delete;
     ~field() = default;
 
-    void put_ship();
+    bool put_ship();
     bool check_pos_valid(const ship& obj) const;
     void public_print() const;
     void private_print() const;

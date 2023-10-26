@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\jorka\CLionProjects\console-games -B C:\Users\jorka\CLionProjects\console-games\cmake-build-debug-mingw
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/jorka/CLionProjects/console-games/cmake-build-debug-mingw

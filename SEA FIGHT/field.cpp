@@ -17,10 +17,12 @@ field::field() : ships({ship(4),
                         map(std::vector<std::vector<bool>>(SIZE, std::vector<bool>(SIZE, false))),
                         cur(0) {};
 
-void field::put_ship() {
+bool field::put_ship() {
     if (check_pos_valid(ships[cur])) {
         cur++;
+        return true;
     }
+    return false;
 }
 
 bool field::check_pos_valid(const ship &obj) const {
@@ -104,9 +106,9 @@ void field::private_print() const {
 }
 
 int field::shoot(std::pair<int, int> target) {
-    if (target.first < 0 || target.first > 9 || target.second < 0 || target.second > 9) return -1;
+    if (target.first < 0 || target.first > 9 || target.second < 0 || target.second > 9) return WRONG_SHOT;
 
-    if (map[target.first][target.second]) return -1;
+    if (map[target.first][target.second]) return WRONG_SHOT;
 
     map[target.first][target.second] = true;
 
@@ -137,10 +139,10 @@ int field::shoot(std::pair<int, int> target) {
                 (k.first + 1 < SIZE && k.second + 1 < SIZE) ? map[k.first + 1][k.second + 1] = true : 1 + 1;
             }
             el.is_live = false;
-            return 2;
+            return DESTRUCTION;
         }
     }
-    return hit ? 1 : 0;
+    return hit ? HIT : MISS;
 }
 
 bool field::check_game_over() const {
